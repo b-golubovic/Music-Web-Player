@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="sr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="icon" type="image/x-icon" href="/favicon.png" />
+    <title>Muzički Player</title>
+    <script src="https://kit.fontawesome.com/1b0fc96ea4.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="hidden-menu">
+        <a class="button-hide-menu" onclick="toggleMenu()">
+            <i class="fa fa-bars"></i>
+        </a>
+
+        <a href="index.html" class="nav-item-right"><i class="fas fa-home"></i>Početna stranica</a>
+
+        <a href="oNama.html" class="nav-item-right"><i class="fas fa-users"></i>O nama</a>
+
+        <a class="nav-item-right" id="nav-item-active"><i class="fas fa-hands-helping"></i>Podrška</a>
+    </div>
+
+    <nav>
+        <ul>
+            <li id="logo">
+                <p>
+                    MUZIČKI PLAYER<br /><span style="
+                color: white;
+                font-size: 15px;
+                letter-spacing: 1px;
+                font-family: 'Courgette', cursive;
+              ">Napravio tim "Implementatori"</span>
+                </p>
+            </li>
+
+            <li class="button-show-menu">
+                <a class="nav-item-right" onclick="toggleMenu()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </li>
+
+
+            <li class="link"></li>
+            <a class="nav-item-right" id="nav-item-active"><i
+                    class="fas fa-hands-helping"></i>Podrška</a>
+            </li>
+
+            <li class="link">
+                <a href="oNama.html" class="nav-item-right"><i class="fas fa-users"></i>O nama</a>
+            </li>
+
+            <li class="link">
+                <a href="index.html" class="nav-item-right"><i class="fas fa-home"></i>Početna stranica</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        <div id="float-center">
+            <h1 style="margin-bottom: 35px">
+                Imaš tehničkih problema sa našim softverom?
+            </h1>
+
+            <p style="margin-bottom: 230px">
+                Kontaktiraj nas i odgovorićemo ti u najkraćem roku!
+              </p>
+        </div>
+
+        <div id="scroll-down-1">
+            <p>Kontakt informacije</p>
+            <a href="#kontakt-informacije"><img src="arrowDown.png" width="45" height="auto" /></a>
+        </div>
+    </main>
+
+    <div class="columns" id="kontakt-informacije">
+        <div class="column">
+          <i class="fas fa-phone" id="main-i"></i>
+    
+          <h2>Telefon</h2>
+    
+          <ul>
+            <li style="text-align: center;">+381691020377</li>
+          </ul>
+        </div>
+    
+        <div class="column">
+
+            <i class="fas fa-paper-plane" id="main-i"></i>
+    
+          <h2>Elektronska pošta</h2>
+    
+          <ul>
+            <li style="text-align: center;">b.golubovic21@gimnazijatvrdjava.edu.rs</li>
+            
+            <li style="text-align: center;">s.jovisic21@gimnazijatvrdjava.edu.rs</li>
+            
+            <li style="text-align: center;">a.jakovljevic21@gimnazijatvrdjava.edu.rs</li>
+            
+            <li style="text-align: center;">n.ivkovic21@gimnazijatvrdjava.edu.rs</li>
+          </ul>
+
+        </div>
+    
+        <div class="column">
+
+            <i class="fas fa-map-marker-alt" id="main-i"></i>
+      
+            <h2>Lokacija</h2>
+      
+            <ul>
+              <li style="text-align: center;">Jevrejska 7, Novi Sad 21000</li>
+              
+            </ul>
+
+          </div>
+      </div>
+
+    <div id="login-section">
+        <p>Pridruži se danas jednim klikom!</p>
+        <button id="button-spotify">
+            <i class="fab fa-spotify"></i>Prijavi se pomoću Spotify-a
+        </button>
+    </div>
+
+    <footer>
+        <p>&copy; Muzički Player</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            var x = document.getElementById("hidden-menu");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+    </script>
+</body>
+
+</html>

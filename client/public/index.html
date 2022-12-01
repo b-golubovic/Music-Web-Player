@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="sr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="main.css" />
+  <link rel="icon" type="image/x-icon" href="/favicon.png" />
+  <title>Muzički Player</title>
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <script src="https://kit.fontawesome.com/1b0fc96ea4.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div id="hidden-menu">
+    <a class="button-hide-menu" onclick="toggleMenu()">
+      <i class="fa fa-bars"></i>
+    </a>
+
+    <a class="nav-item-right" id="nav-item-active"><i class="fas fa-home"></i>Početna stranica</a>
+
+    <a href="oNama.html" class="nav-item-right"><i class="fas fa-users"></i>O nama</a>
+
+    <a href="podrska.html" class="nav-item-right"><i class="fas fa-hands-helping"></i>Podrška</a>
+  </div>
+
+  <nav id="nav" class="nav">
+    <ul>
+      <li id="logo">
+        <p href="index.html">
+          MUZIČKI PLAYER<br /><span style="
+                color: white;
+                font-size: 15px;
+                letter-spacing: 1px;
+                font-family: 'Courgette', cursive;
+              ">Napravio tim "Implementatori"</span>
+        </p>
+      </li>
+
+      <li class="button-show-menu">
+        <a class="nav-item-right" onclick="toggleMenu()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </li>
+
+      <li class="link">
+        <a href="podrska.html" class="nav-item-right"><i class="fas fa-hands-helping"></i>Podrška</a>
+      </li>
+
+      <li class="link">
+        <a href="oNama.html" class="nav-item-right"><i class="fas fa-users"></i>O nama</a>
+      </li>
+
+      <li class="link">
+        <a class="nav-item-right" id="nav-item-active"><i class="fas fa-home"></i>Početna stranica</a>
+      </li>
+    </ul>
+  </nav>
+
+  <main>
+    <div id="float-left">
+      <h1>Novi način slušanja muzike je stigao!</h1>
+      <p>
+        Muzički Player je naš najnoviji projekat, čiji je cilj da učini
+        slušanje muzike mnogo lakšim, bez reklama!
+      </p>
+    </div>
+
+    <div id="float-right">
+      <img src="Laptop.png" alt="background" width="100%" height="100%" draggable="false" />
+    </div>
+
+    <div id="root">
+    </div>
+
+    <div id="scroll-down-1">
+      <p>Saznaj više</p>
+      <a href="#saznaj-više"><img src="arrowDown.png" width="45" height="auto" /></a>
+    </div>
+  </main>
+
+  <div class="columns" id="saznaj-više">
+    <div class="column">
+      <i class="fas fa-headphones" id="main-i"></i>
+
+      <h2>Slušaj omiljenu muziku</h2>
+
+      <ul>
+        <li><i class="fas fa-check-circle"></i>5.000+ pesama</li>
+        <li><i class="fas fa-check-circle"></i>Preko 1.000 kreatora</li>
+        <li><i class="fas fa-check-circle"></i>Pametne preporuke</li>
+        <li><i class="fas fa-check-circle"></i>Bez reklama</li>
+      </ul>
+    </div>
+
+    <div class="column">
+      <i class="fas fa-play-circle" id="main-i"></i>
+
+      <h2>Sopstvene plejliste</h2>
+
+      <ul>
+        <li><i class="fas fa-check-circle"></i>Kreacija u jednom kliku</li>
+        <li>
+          <i class="fas fa-check-circle"></i>Plejlista za omiljene pesme
+        </li>
+        <li>
+          <i class="fas fa-check-circle"></i>Jednostavno deljenje plejlista
+        </li>
+        <li><i class="fas fa-check-circle"></i>Preporuke novih plejlista</li>
+      </ul>
+    </div>
+
+    <div class="column">
+      <i class="fas fa-search-plus" id="main-i"></i>
+
+      <h2>Optimizovana pretraga</h2>
+
+      <ul>
+        <li>
+          <i class="fas fa-check-circle"></i>Pretraga se zasniva i na lirikama
+        </li>
+        <li><i class="fas fa-check-circle"></i>Automatski predviđa reči</li>
+        <li>
+          <i class="fas fa-check-circle"></i>Mogućnost pretrage kreatora
+        </li>
+        <li><i class="fas fa-check-circle"></i>Podržava glasovnu pretragu</li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="login-section">
+    <p>Pridruži se danas jednim klikom!</p>
+    <button id="button-spotify" href="#">
+      <i class="fab fa-spotify"></i>Prijavi se pomoću Spotifaja
+    </button>
+  </div>
+
+  <footer>
+    <p>&copy; Muzički Player</p>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      var x = document.getElementById("hidden-menu");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+  </script>
+</body>
+
+</html>

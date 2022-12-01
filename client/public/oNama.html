@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="sr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="main.css" />
+  <link rel="icon" type="image/x-icon" href="/favicon.png" />
+  <title>Muzički Player</title>
+  <script src="https://kit.fontawesome.com/1b0fc96ea4.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div id="hidden-menu">
+    <a class="button-hide-menu" onclick="toggleMenu()">
+      <i class="fa fa-bars"></i>
+    </a>
+
+    <a href="index.html" class="nav-item-right"><i class="fas fa-home"></i>Početna stranica</a>
+
+    <a class="nav-item-right" id="nav-item-active"><i class="fas fa-users"></i>O nama</a>
+
+    <a href="podrska.html" class="nav-item-right"><i class="fas fa-hands-helping"></i>Podrška</a>
+
+  </div>
+
+  <nav>
+    <ul>
+      <li id="logo">
+        <p>
+          MUZIČKI PLAYER<br /><span style="
+                color: white;
+                font-size: 15px;
+                letter-spacing: 1px;
+                font-family: 'Courgette', cursive;
+              ">Napravio tim "Implementatori"</span>
+        </p>
+      </li>
+
+      <li class="button-show-menu">
+        <a class="nav-item-right" onclick="toggleMenu()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </li>
+
+      <li class="link">
+        <a href="podrska.html" class="nav-item-right"><i class="fas fa-hands-helping"></i>Podrška</a>
+      </li>
+
+      <li class="link">
+        <a class="nav-item-right" id="nav-item-active"><i class="fas fa-users"></i>O nama</a>
+      </li>
+
+      <li class="link">
+        <a href="index.html" class="nav-item-right"><i class="fas fa-home"></i>Početna stranica</a>
+      </li>
+    </ul>
+  </nav>
+
+  <main>
+    <div id="members-section">
+      <h1 style="margin-bottom: 35px; font-size: 45px;">
+        Tim "Implementatori"
+      </h1>
+    </div>
+
+    <div id="member-pictures">
+
+      <img src="Stefan.png" width="150" height="auto" draggable="false" />
+      <img src="Bogdan.png" width="150" height="auto" draggable="false" />
+      <img src="Ana.png" width="150" height="auto" draggable="false" />
+      <img src="Nikola.png" width="150" height="auto" draggable="false" />
+
+    </div>
+
+    <div id="scroll-down-1">
+      <p>Detaljnije o nama</p>
+      <a href="#više-o-nama"><img src="arrowDown.png" width="45" height="auto" /></a>
+    </div>
+  </main>
+
+  <div class="about-person-section" id="više-o-nama">
+
+    <div class="about-person-column">
+      <img src="Stefan.png" width="200" height="auto" draggable="false" />
+
+      <h2>Stefan Jovišič</h2>
+
+      <p>Back-end programer</p>
+
+    </div>
+
+    <div class="about-person-column">
+      <img src="Bogdan.png" width="200" height="auto" draggable="false" />
+
+      <h2>Bogdan Golubović</h2>
+
+      <p>Front-end programer</p>
+
+    </div>
+
+    <div class="about-person-column">
+      <img src="Ana.png" width="200" height="auto" draggable="false" />
+
+      <h2>Ana Jakovljević</h2>
+
+      <p>Dizajner</p>
+
+    </div>
+
+    <div class="about-person-column">
+      <img src="Nikola.png" width="200" height="auto" draggable="false" />
+
+      <h2>Nikola Ivković</h2>
+
+      <p>Kreativni urednik</p>
+
+    </div>
+
+
+  </div>
+
+  <div id="login-section">
+    <p>Pridruži se danas jednim klikom!</p>
+    <button id="button-spotify">
+      <i class="fab fa-spotify"></i>Prijavi se pomoću Spotify-a
+    </button>
+  </div>
+
+  <footer>
+    <p>&copy; Muzički Player</p>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      var x = document.getElementById("hidden-menu");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+  </script>
+</body>
+
+</html>
